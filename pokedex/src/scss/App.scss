@@ -1,0 +1,38 @@
+.App {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  font-family: cursive;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(./../assets/forest.jpg);
+  user-select: none;
+  margin: 0 auto;
+  //   width: 1000px;
+
+  //   height: 100vh;
+}
+.App-header {
+  grid-area: header;
+  //   background-color: green;
+  text-align: center;
+  & img {
+    height: 60px;
+  }
+}
+.App-nav {
+  grid-area: nav;
+  background: #c4e6f3e6;
+  border: 3px solid #808080;
+  border-radius: 20px 5px;
+  //   background-color: firebrick;
+}
+.App-main {
+  grid-area: main;
+  //   background-color: sienna;
+}
