@@ -1,9 +1,7 @@
-import React from 'react';
-
+import React from "react";
+import "./../scss/Main.scss";
 function Main() {
-    return (
-      <main className="App-main">Content main</main>
-    );
-  }
-  
-  export default Main;
+  return <main className="App_main">Content main</main>;
+}
+
+export default Main;
