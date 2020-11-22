@@ -1,5 +1,5 @@
 import React from "react";
-import imagelogo from "./../Pokédex_logo.png";
+import imagelogo from "./../../assets/Pokédex_logo.png";
 import "./Header.scss";
 
 function Header() {
