@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Nav from "./components/Nav";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Nav from "./components/Nav/Nav";
 
-import "./scss/App.scss";
+import "./App.scss";
 
 function App() {
   return (

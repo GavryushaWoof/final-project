@@ -1,6 +1,6 @@
 import React from "react";
 import imagelogo from "./../Pokédex_logo.png";
-import "./../scss/Header.scss";
+import "./Header.scss";
 
 function Header() {
   return (
