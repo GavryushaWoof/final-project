@@ -6,10 +6,14 @@ function Nav() {
     <nav className="App_nav">
       <ul>
         <li>
-          <Link to="/">Pokédex</Link>
+          <Link to="/" className="nav_link">
+            Pokédex
+          </Link>
         </li>
         <li>
-          <Link to="/pokemons/caught_pokemon">Caught Pokémon</Link>
+          <Link to="/pokemons/caught_pokemon" className="nav_link">
+            Caught Pokémon
+          </Link>
         </li>
       </ul>
     </nav>

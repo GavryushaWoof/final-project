@@ -2,7 +2,31 @@
   background: #c4e6f3e6;
   border: 3px solid #808080;
   border-radius: 20px 5px;
-  height: 600px;
-  width: 500px;
+  max-height: 600px;
+  max-width: 500px;
   text-align: center;
+}
+@media all and (min-width: 1680px) {
+  .pokedex_pokemon button,
+  .pokedex_pokemon p {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 1440px) and (min-width: 616px) {
+  .pokedex_pokemon {
+    max-height: 500px;
+    max-width: 400px;
+    & img {
+      height: 300px;
+    }
+  }
+}
+@media all and (max-width: 566px) {
+  .pokedex_pokemon {
+    max-height: 200px;
+    max-width: 100px;
+    & img {
+      height: 100px;
+    }
+  }
 }

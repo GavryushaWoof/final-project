@@ -4,4 +4,24 @@
   border: 3px solid #808080;
   border-radius: 20px 5px;
   height: calc(100vh - 60px);
+  & ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+}
+.nav_link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+@media all and (min-width: 1680px) {
+  .nav_link {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 1440px) and (min-width: 616px) {
+  .nav_link {
+    font-size: 20px;
+  }
 }
