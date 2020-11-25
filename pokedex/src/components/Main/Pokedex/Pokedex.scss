@@ -1,0 +1,12 @@
+.main_pokedex {
+  display: flex;
+  flex-flow: row wrap;
+  overflow-y: scroll;
+  height: 100%;
+  justify-content: center;
+}
+.pokedex_button {
+  width: 1000px;
+  height: 60px;
+  font-size: 40px;
+}
