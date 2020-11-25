@@ -1,5 +1,5 @@
 import { IPokemon } from "../Interfaces/IPokemon";
-import { TypesAction } from "./../Enums/Enums";
+import { TypesAction } from "../Enums/Enums";
 
 interface TypeAction {
   type: TypesAction.FETCH_POKEMONS | TypesAction.CAUGHT_POKEMONS;

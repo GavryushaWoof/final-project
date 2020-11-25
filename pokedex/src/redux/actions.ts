@@ -1,6 +1,6 @@
 import { Dispatch } from "redux";
 import { IPokemon } from "../Interfaces/IPokemon";
-import { TypesAction } from "./../Enums/Enums";
+import { TypesAction } from "../Enums/Enums";
 import { PokemonsStore } from "./pokemonReducer";
 export function fetchPokemons(props: number) {
   return async (dispatch: Dispatch) => {
