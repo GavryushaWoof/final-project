@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { Dispatch } from "redux";
-import { IPokemon } from "../../../Interfaces/IPokemon";
 import "./InfoPokemon.scss";
 function InfoPokemon(props: { id: number }) {
   const [pokemon, setPokemon] = useState(null);
