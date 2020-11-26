@@ -2,16 +2,52 @@
   background: #c4e6f3e6;
   border: 3px solid #808080;
   border-radius: 20px 5px;
-  max-height: 600px;
-  max-width: 500px;
-  text-align: center;
+  max-height: 1000px;
+  max-width: 2000px;
+  display: flex;
+  align-items: center;
+
+  & .info_pokemon_text p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 40px;
+  }
+  & img {
+    height: 700px;
+  }
 }
-@media all and (max-width: 1440px) and (min-width: 616px) {
+@media all and (max-width: 1440px) {
   .main_info_pokemon {
-    max-height: 500px;
-    max-width: 400px;
-    &_img {
+    max-height: 700px;
+    max-width: 700px;
+    & img {
+      height: 450px;
+    }
+    & .info_pokemon_text p {
+      font-size: 20px;
+    }
+  }
+}
+@media all and (max-width: 780px) {
+  .main_info_pokemon {
+    max-width: 500px;
+    & img {
       height: 300px;
+    }
+  }
+}
+@media all and (max-width: 620px) {
+  .main_info_pokemon {
+    text-align: center;
+    display: block;
+  }
+}
+@media all and (max-width: 320px) {
+  .main_info_pokemon {
+    max-width: 250px;
+    & img {
+      height: 200px;
     }
   }
 }

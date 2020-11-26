@@ -14,3 +14,12 @@
   user-select: none;
   margin: 0 auto;
 }
+@media all and (max-width: 620px) {
+  .App {
+    grid-template-areas:
+      "header nav"
+      "main main";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1.5fr 10fr;
+  }
+}

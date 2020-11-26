@@ -5,3 +5,9 @@
     height: 60px;
   }
 }
+@media all and (max-width: 620px) {
+  .App_header img {
+    margin-top: 5px;
+    height: 40px;
+  }
+}

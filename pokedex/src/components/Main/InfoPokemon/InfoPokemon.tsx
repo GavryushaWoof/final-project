@@ -19,11 +19,13 @@ function InfoPokemon(props: { id: number }) {
         src={`https://raw.githubusercontent.com/js-training-sep-2020/final-project/main/pokemons/${props.id}.png`}
         alt="Изображение покемона"
       />
-      <p>{`#${props.id}`}</p>
-      <p>{`Имя: ${(pokemon as any).name}`}</p>
-      {((pokemon as any).catched && (
-        <p>{`Статус: пойман ${(pokemon as any).date}`}</p>
-      )) || <p>{"Статус: не найден"}</p>}
+      <div className="info_pokemon_text">
+        <p>{`#${props.id}`}</p>
+        <p>{`Имя: ${(pokemon as any).name}`}</p>
+        {((pokemon as any).catched && (
+          <p>{`Статус: пойман ${(pokemon as any).date}`}</p>
+        )) || <p>{"Статус: не найден"}</p>}
+      </div>
     </div>
   ) : (
     <span>loading</span>
