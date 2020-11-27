@@ -4,6 +4,7 @@ import "./Pokedex.scss";
 import Pokemon from "./Pokemon/Pokemon";
 import { caughtPokemons } from "../../../redux/actions";
 import { IPokemon } from "../../../Interfaces/IPokemon";
+import { RootState } from "../../../redux/rootReducer";
 
 function PokedexCaught() {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ function PokedexCaught() {
   }, [true]);
 
   const caughtList: IPokemon[] = useSelector(
-    (state: any) => state.pokedex.caughtPokemons
+    (state: RootState) => state.pokedex.caughtPokemons
   );
 
   return caughtList.length ? (
