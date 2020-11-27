@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { IPokemon } from "../../../Interfaces/IPokemon";
 import "./InfoPokemon.scss";
 function InfoPokemon(props: { id: number }) {
-  const [pokemon, setPokemon] = useState(null);
+  const [pokemon, setPokemon] = useState<IPokemon | null>(null);
   const pokemonItem = async function (props: number) {
     const response = await fetch(`http://localhost:4200/pokemons/${props}`);
     setPokemon(await response.json());
@@ -18,10 +19,10 @@ function InfoPokemon(props: { id: number }) {
       />
       <div className="info_pokemon_text">
         <p>{`#${props.id}`}</p>
-        <p>{`Имя: ${(pokemon as any).name}`}</p>
-        {((pokemon as any).catched && (
-          <p>{`Статус: пойман ${(pokemon as any).date}`}</p>
-        )) || <p>{"Статус: не найден"}</p>}
+        <p>{`Имя: ${pokemon.name}`}</p>
+        {(pokemon.catched && <p>{`Статус: пойман ${pokemon.date}`}</p>) || (
+          <p>{"Статус: не найден"}</p>
+        )}
       </div>
     </div>
   ) : (
