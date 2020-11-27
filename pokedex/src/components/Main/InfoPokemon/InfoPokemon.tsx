@@ -9,9 +9,6 @@ function InfoPokemon(props: { id: number }) {
   useEffect(() => {
     pokemonItem(props.id);
   }, [true]);
-  useEffect(() => {
-    console.log(pokemon);
-  }, [pokemon]);
 
   return pokemon ? (
     <div className="main_info_pokemon">
